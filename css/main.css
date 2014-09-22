@@ -1,0 +1,630 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/*@media only screen and (min-width : 0em) and (max-width: 30em){
+
+
+}
+
+@media only screen and (min-width : 30em) and (max-width : 50em){
+
+
+}*/
+
+/*all devices*/
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+body{
+    border-top: thin #E3E3E3 solid;
+}
+
+#menu{
+    width: 100%;
+    background:#E3E3E3;
+    z-index:10;
+    border-bottom: none;
+    position: fixed;
+    top:0;
+    
+}
+
+#logo{
+    display: flex;
+    width: 3.5em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    margin-top: 0.8em;
+    margin-left: 0.3em;
+}
+
+#image{
+    position: fixed;
+    width: 100%;
+    top:5em;
+}
+
+#main-image{
+    position: fixed;
+
+}
+
+.main-branding-one{
+    position: absolute;
+    display: flex;
+    top: 8em;
+    left:0.5em;
+    color: #eee;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.4em;
+}
+
+.main-branding-two{
+    position: absolute;
+    display: flex;
+    top: 21em;
+    left:1em;
+    color: #eee;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    
+}
+
+.main-branding-three{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex: wrap;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #eee;
+    border: 3px white solid;
+    border-radius: 1px;
+    line-height: 1em;
+    font-weight: 100;
+    top: 21em;
+    left: 4em;
+    position: absolute;
+    padding: 1em 1em;
+    text-decoration: none;
+
+}
+
+.main-branding-three li a:focus {
+    background: none;
+    border: none;
+    color: #eee;
+}
+
+#menubar{
+    width: 3em;
+    height: 4em;
+    float: right;
+    margin-right: 0.4em;
+    margin-top: -2.5em;
+    border: none;
+    background-color:#E3E3E3;
+
+}
+
+#menu ul{
+    padding:0;
+    margin:0;
+    list-style: none;
+    height: 0em;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+    background-color: #504a4b;
+    width: 100%;
+
+}
+#menu ul.show{
+    height: 6.6em;
+}
+
+#menu ul li a{
+    font-family:'Oswald', sans-serif;
+    display: block;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    line-height: 2em;
+    margin-top: 0.2em;
+    border-bottom: #736f6e 1px solid;
+}
+
+#menu ul li{
+    float: none;
+    position: relative;
+    border-bottom: none;
+}
+
+#menu li a:hover, #menu li a:focus {
+    background: none;
+    border: none;
+    color: #ff6600;
+}
+
+
+#content-main{
+    margin-top: 100em;
+    position: relative;
+    z-index: 100;
+    
+}
+
+#content{
+    background-color: #eee;
+    width: 100%;
+    height: 40em;
+}
+
+.main-service{
+    font-family: 'Abel', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.services-content, .services-content-sub{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.services-content-link{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex: wrap;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+    border: 3px black solid;
+    border-radius: 1px;
+    line-height: 1em;
+    font-weight: 100;
+    top: 23em;
+    left: 4.5em;
+    position: absolute;
+    padding: 1em 1em;
+    text-decoration: none;
+}
+
+/*Card Flip starts*/
+
+#content-flip{
+    width: 100%;
+    height: 100em;
+    background-color: #FFD700;
+    position: relative;
+    perspective: 1200px;
+    outline: 1px red solid;
+}
+
+
+#content-flip div{
+    width: 50%;
+    height: 15em;
+    border:1px red solid;
+    position: relative;
+    float: left;
+    text-align
+
+    transform-style: preserve-3d;
+    transition: transform 1s;
+
+}
+
+#content-flip div:hover{
+  transform: rotateY( 180deg );
+}
+
+#content-flip div figure{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+#content-flip div .front{
+    background: red;
+}
+
+
+#content-flip div .back{
+    background: blue;
+    transform: rotateY( 180deg );
+
+
+}
+
+
+/*.flip-one, .flip-two, .flip-three, .flip-four, .flip-five{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.flip-one figure, .flip-two figure, .flip-three figure, .flip-four figure, .flip-five figure{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-one .front, .flip-two .front, .flip-three .front, .flip-four .front, .flip-five .front{
+    background: #FFD700;
+}
+
+.flip-one .back, .flip-two .back, .flip-three .back, .flip-four .back, .flip-five .back{
+    background: green;
+    transform: rotateY(180deg);
+}
+
+.flip-one.flipped, .flip-two.flipped, .flip-three.flipped, .flip-four.flipped, .flip-five.flipped{
+    transform: rotateY(180deg);
+}*/
+
+/*Card flip Finishes*/
+
+#content-invite{
+    position: relative;
+    height: 19em;
+}
+
+
+#content-invite img{
+    height: 20em;
+}
+
+.content-create{
+    top: 96em;
+    left: 1em;
+    color: #eee;
+    display:flex;
+    flex:wrap;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+   
+}
+
+.content-invite-create-link{
+    color: #eee;
+    position: absolute;
+    top: 149em;
+    left: 8em;
+    text-decoration: none;
+    border: 1px white solid;
+    border-radius: 1px;
+    line-height: 1em;
+    padding: 1em 1em;
+    font-weight: 100;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width : 30em) {
+/*for any devices bigger than 30em*/
+
+}
+
+@media only screen and (min-width : 50em) {
+/*for any devices bigger than 50em*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
